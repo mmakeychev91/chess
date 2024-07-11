@@ -1,0 +1,40 @@
+.first-button {
+  transition: var(--transition);
+
+  background-color: var(--fourhColor);
+  border-radius: 66px;
+  border: 1px solid;
+  padding: 14px 48px;
+  span {
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3; /* 20.8px */
+  }
+
+  &--black {
+    color: var(--thirdColor);
+    background: var(--fourhcolor);
+    border-color: transparent;
+    @include hover {
+      color: var(--fourhColor);
+      background: var(--fifthColor);
+    }
+  }
+  &--transparent {
+    border-color: var(--fourhColor);
+    color: var(--fourhColor);
+    background-color: transparent;
+    @include hover {
+      color: var(--thirdColor);
+      border-color: transparent;
+      background-color: var(--fourhcolor);
+    }
+  }
+  @include tablet {
+    padding: 11px 20px 13px;
+  }
+}

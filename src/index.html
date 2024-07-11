@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru" class="page">
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    <main class="main">
+      <div class="page-wrapper">
+        <div class="container">
+          <header class="main-banner">
+            <div class="container">
+              <span class="main-banner__logo" aria-label="Клуб четырех коней">@include('partials/svg/logo.svg')</span>
+              <div class="main-banner__info">
+                <h1 class="main-banner__title">
+                  <span class="main-banner__title-text">Превратите уездный город</span>
+                  <span class="main-banner__title-text main-banner__title-text--center">в столицу</span>
+                  <span class="main-banner__title-text">земного шара</span>
+                </h1>
+                <p class="main-banner__text">Оплатите взнос на телеграммы для организации Международного васюкинского
+                  турнира по шахматам</p>
+                <div class="main-banner__buttons-wrap">
+                  <button class="first-button first-button--black">
+                    <span>Поддержать шахматную мысль</span>
+                  </button>
+                  <button class="first-button first-button--transparent"><span>Подробнее о турнире</span></button>
+                </div>
+              </div>
+            </div>
+            @include('partials/ticker.html')
+          </header>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="tabs">
+    <ul class="tabs__nav">
+      <li class="tabs__nav-item"><button class="tabs__nav-btn tabs__nav-btn--active" data-tabs-path="first"></button></li>
+      <li class="tabs__nav-item"><button class="tabs__nav-btn" data-tabs-path="second"></button></li>
+      <li class="tabs__nav-item"><button class="tabs__nav-btn" data-tabs-path="third"></button></li>
+    </ul>
+    <div class="tabs__content">
+      <div class="tabs__panel tabs__panel--active" data-tabs-path="first"></div>
+      <div class="tabs__panel" data-tabs-path="second"></div>
+      <div class="tabs__panel" data-tabs-path="third"></div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.desktop {
+  display: block;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.tablet {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}

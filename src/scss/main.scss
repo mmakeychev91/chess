@@ -1,0 +1,32 @@
+// Libs
+@import "../../node_modules/normalize.css/normalize";
+
+// Modals
+// @import '../../node_modules/graph-modal/dist/graph-modal.min';
+
+// Tabs
+// @import "../../node_modules/graph-tabs/dist/graph-tabs.min"
+
+// AOS
+// @import "../../node_modules/aos/dist/aos";
+
+// Swiper
+@import "../../node_modules/swiper/swiper-bundle.min";
+
+// Config
+@import "config/vars";
+@import "config/mixins";
+@import "config/fonts";
+@import "config/global";
+@import "config/typography";
+@import "config/utils";
+
+// UI
+@import "ui/container";
+
+// блоки
+@import "blocks/main-banner";
+@import "blocks/button/first-button";
+
+// components
+@import "components/ticker";

@@ -1,0 +1,26 @@
+.btn-reset {
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.input-reset {
+  appearance: none;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
